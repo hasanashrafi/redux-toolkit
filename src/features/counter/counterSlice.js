@@ -20,3 +20,4 @@ const counterSlice = createSlice({
 
 export default counterSlice.reducer
 export const { increment, decrement } = counterSlice.actions
+export const selectCounter = (store)=>store.counter.counterValue
