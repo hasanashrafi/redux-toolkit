@@ -1,13 +1,14 @@
 import { useSelector } from 'react-redux';
+import { selectCounter } from '../features/counter/counterSlice';
 
 function Counter() {
-    const store = useSelector((store) => store.counter.counterValue)
+    const counter = useSelector(selectCounter)
 
 
     return (
         <div>
             Counter
-            <h2>counter is: {store}</h2>
+            <h2>counter is: {counter}</h2>
         </div>
     )
 }
