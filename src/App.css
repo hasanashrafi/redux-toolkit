@@ -1,5 +1,7 @@
+* {
+  text-align: center;
+}
 .App {
-  text-align: left;
   margin: 20px;
 }
 
@@ -15,8 +17,8 @@ button {
   cursor: pointer;
 }
 h2 {
+  display: block;
   text-align: center;
-  width: 180px;
   border: 1px solid #110530;
   padding: 10px;
   border-radius: 5px;
