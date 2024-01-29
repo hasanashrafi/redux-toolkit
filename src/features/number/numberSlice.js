@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-initialState = {
+const initialState = {
     numberValue: 5,
 }
 
@@ -18,3 +18,4 @@ const numberSlice = createSlice({
 })
 export default numberSlice.reducer
 export const { increment, decrement } = numberSlice.actions
+export const selectNumber = (store) => store.number.numberValue
